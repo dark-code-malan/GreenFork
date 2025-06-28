@@ -1,0 +1,715 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rochester&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.main {
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(./intro-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+
+section ul {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+nav ul a li {
+    list-style: none;
+    margin-top: 30px;
+}
+
+nav ul a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-family: "open sans";
+    transition: 400ms ease-in-out;
+}
+
+nav ul a:hover {
+    color: #d43031;
+}
+
+.hero {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero h1 {
+    position: relative;
+    font-size: 120px;
+    font-family: 'Rochester', cursive;
+    color: #fff;
+    letter-spacing: 10px;
+    margin-bottom: 100px;
+
+}
+
+.hero p {
+    position: absolute;
+    font-family: "Open sans";
+    font-size: 28px;
+    color: #fff;
+    margin-top: 390px;
+}
+
+.menu {
+    margin-top: 140px;
+}
+
+.menu h2 {
+    position: relative;
+    text-align: center;
+    font-size: 38px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.menu h2::after {
+    content: '';
+    height: 2px;
+    background: #d43031;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    right: 900px;
+    top: 53px;
+}
+
+.card {
+    display: flex;
+    margin-top: 110px;
+    width: 33.33%;
+    gap: 200px;
+    padding: 0 280px;
+}
+
+.card h3 {
+    font-size: 26px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 330px;
+}
+
+.card p {
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    opacity: 0.9;
+    color: #1e1e1e;
+}
+
+.story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 550px;
+    margin-top: 160px;
+    background-color: rgb(234, 235, 236);
+}
+
+.img img {
+    width: 950px;
+    height: 550px;
+}
+
+
+
+.content h2 {
+    position: relative;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin-top: 80px;
+    margin-left: 150px;
+    text-transform: uppercase;
+}
+
+.content h2::after {
+    content: '';
+    height: 2px;
+    background: #d43031;
+    width: 100px;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    text-align: center;
+}
+
+.content p {
+    margin-top: 70px;
+    margin-left: 150px;
+    width: 450px;
+    text-align: left;
+    font-weight: 400;
+    opacity: 0.8;
+    font-family: 'Raleway', sans-serif;
+    color: #1e1e1e;
+}
+
+.para {
+    position: relative;
+    bottom: 45px;
+
+}
+
+.menu-list {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two columns: Starters and Main Course */
+    gap: 170px;
+    padding: 0 300px;
+}
+
+.section h2 {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    /* Decorative underline */
+    padding-bottom: 5px;
+    font-size: 38px;
+    font-weight: 400;
+}
+
+.section h2::after {
+    content: '';
+    height: 2px;
+    background: #d43031;
+    width: 100px;
+    position: absolute;
+    bottom: -8px;
+    left: 230px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    /* Info and Price */
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.info h3 {
+    margin: 0 0 5px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.info p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 16px;
+    align-self: center;
+    color: #666;
+
+}
+
+.list h1 {
+    margin-top: 120px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.slider {
+    display: flex;
+}
+
+.slider img {
+    width: 25%;
+}
+
+.Chef {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 550px;
+    margin-top: 100px;
+    margin-left: 250px;
+    gap: 20px;
+
+}
+
+.Chef img {
+    margin-top: 60px;
+    width: 550px;
+    height: 366.66px;
+    margin-right: 400px;
+}
+
+.Chef2 {
+    margin-bottom: 80px;
+}
+
+
+
+.footer {
+    background-color: #1e1e1e;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer h3,
+p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.footer-top p {
+    margin-top: 20px;
+}
+
+.no {
+    font-family: "open sans";
+}
+
+.footer-col {
+    margin: 20px 20px;
+}
+
+.footer-col h3 {
+    color: white;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    font-size: 22px;
+}
+
+.footer-col hr {
+    width: 40px;
+    border: 1px solid red;
+    margin: 0 auto 10px;
+}
+
+.footer-contact h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-contact hr {
+    width: 40px;
+    border: 1px solid red;
+    margin: 0 auto 20px;
+}
+
+.footer-contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-contact input,
+.footer-contact textarea {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    width: 45%;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #444;
+    border: none;
+    color: white;
+}
+
+.footer-contact textarea {
+    height: 100px;
+    resize: none;
+}
+
+.footer-contact button {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    margin-top: 10px;
+    padding: 18px 30px;
+    background-color: transparent;
+    border: 1px solid #999;
+    color: white;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+
+.footer-contact button:hover {
+    background-color: #d43031;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p {
+    margin-left: 200px;
+}
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icons {
+    margin-right: 500px;
+}
+
+.social-icons i {
+    opacity: 0.6;
+    margin: 0 10px;
+    color: #ccc;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: 400ms ease-in-out;
+}
+
+.social-icons i:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .card {
+        gap: 100px;
+        padding: 0 180px;
+    }
+
+    .menu-list {
+        padding: 0 200px;
+        gap: 100px;
+    }
+
+    .Chef {
+        margin-left: 150px;
+    }
+
+    .Chef img {
+        margin-right: 300px;
+    }
+
+    .footer-bottom p {
+        margin-left: 100px;
+    }
+
+    .social-icons {
+        margin-right: 300px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .hero h1 {
+        font-size: 90px;
+        margin-bottom: 80px;
+    }
+
+    .hero p {
+        margin-top: 320px;
+        font-size: 22px;
+    }
+
+    .card {
+        flex-direction: column;
+        gap: 60px;
+        padding: 0 100px;
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .card img {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .story {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        padding: 40px;
+    }
+
+    .content h2,
+    .content p {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .menu-list {
+        grid-template-columns: 1fr;
+        padding: 0 100px;
+        gap: 60px;
+    }
+
+    .slider {
+        flex-wrap: wrap;
+    }
+
+    .slider img {
+        width: 50%;
+    }
+
+    .Chef {
+        grid-template-columns: 1fr;
+        height: auto;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .Chef img {
+        margin: 40px auto;
+        width: 100%;
+        max-width: 550px;
+        height: auto;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-col {
+        margin: 20px 0;
+    }
+
+    .footer-contact input,
+    .footer-contact textarea {
+        width: 70%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+    .footer-bottom p {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        margin-right: 0;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    nav ul {
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: 70px;
+        margin-bottom: 60px;
+    }
+
+    .hero p {
+        margin-top: 250px;
+        font-size: 18px;
+    }
+
+    .menu h2 {
+        font-size: 30px;
+    }
+
+    .menu h2::after {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .card {
+        padding: 0 50px;
+    }
+
+    .section h2 {
+        font-size: 30px;
+    }
+
+    .section h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .menu-list {
+        padding: 0 50px;
+    }
+
+    .Chef {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .footer-contact input,
+    .footer-contact textarea {
+        width: 90%;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+        letter-spacing: 5px;
+        margin-bottom: 40px;
+    }
+
+    .hero p {
+        margin-top: 180px;
+        font-size: 16px;
+    }
+
+    .card {
+        padding: 0 20px;
+    }
+
+    .menu-list {
+        padding: 0 20px;
+    }
+
+    .item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .price {
+        text-align: right;
+    }
+
+    .slider img {
+        width: 100%;
+    }
+
+    .Chef {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .footer-contact input,
+    .footer-contact textarea {
+        width: 95%;
+    }
+}
+
+/* Very small devices (small phones) */
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        margin-top: 150px;
+    }
+
+    .menu h2 {
+        font-size: 26px;
+    }
+
+    .section h2 {
+        font-size: 24px;
+    }
+
+    .info h3 {
+        font-size: 18px;
+    }
+}
+/* Scroll Animation Styles */
+[data-scroll] {
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-scroll="fade-in"] {
+    transform: translateY(30px);
+}
+
+[data-scroll="fade-left"] {
+    transform: translateX(-30px);
+}
+
+[data-scroll="fade-right"] {
+    transform: translateX(30px);
+}
+
+[data-scroll].is-visible {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* Add this for staggered animations */
+[data-scroll-stagger] > * {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-scroll-stagger].is-visible > * {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Delay for staggered items */
+[data-scroll-stagger].is-visible > *:nth-child(1) { transition-delay: 0.1s; }
+[data-scroll-stagger].is-visible > *:nth-child(2) { transition-delay: 0.2s; }
+[data-scroll-stagger].is-visible > *:nth-child(3) { transition-delay: 0.3s; }
+[data-scroll-stagger].is-visible > *:nth-child(4) { transition-delay: 0.4s; }
+[data-scroll-stagger].is-visible > *:nth-child(5) { transition-delay: 0.5s; }
